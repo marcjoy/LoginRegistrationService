@@ -74,18 +74,7 @@ public partial class ShowTrackerEntities : DbContext
             new ObjectParameter("VenueLoginPasswordPlain", venueLoginPasswordPlain) :
             new ObjectParameter("VenueLoginPasswordPlain", typeof(string));
 
-        return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_RegisterVenue", 
-            venueNameParameter, 
-            venueAddressParameter, 
-            venueCityParameter, 
-            venueStateParameter, 
-            venueZipCodeParameter, 
-            venuePhoneParameter, 
-            venueEmailParameter, 
-            venueWebPageParameter, 
-            venueAgeRestrictionParameter, 
-            venueLoginUserNameParameter, 
-            venueLoginPasswordPlainParameter);
+        return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_RegisterVenue", venueNameParameter, venueAddressParameter, venueCityParameter, venueStateParameter, venueZipCodeParameter, venuePhoneParameter, venueEmailParameter, venueWebPageParameter, venueAgeRestrictionParameter, venueLoginUserNameParameter, venueLoginPasswordPlainParameter);
     }
 
     public virtual int usp_venueLogin(string username, string password)

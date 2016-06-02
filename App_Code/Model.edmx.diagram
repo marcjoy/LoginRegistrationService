@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="c5ea563cad96496189d2e25fad430273" Name="Diagram1">
+      <Diagram DiagramId="188d5715df704b4e97b2094d55b8bef6" Name="Diagram1">
         <EntityTypeShape EntityType="ShowTrackerModel.Venue" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="ShowTrackerModel.VenueLogin" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
         <AssociationConnector Association="ShowTrackerModel.FK__VenueLogi__Venue__31EC6D26" ManuallyRouted="false" />
